@@ -1,0 +1,272 @@
+html{
+  background-color: white;
+  scroll-behavior: smooth;
+}
+*{
+  font-family: benton-sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+body{
+  opacity: 1;
+  transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+/* ------NAVBAR------ */
+#navbar{
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15% 15%;
+  text-align: center;
+  padding: 32px;
+}
+#navbar a{
+  color:#707070;
+  background-color: white;
+  text-decoration: none;
+  font-size: 130%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  /* position: fixed; */
+}
+#navbar a:hover{
+  color: #D06355;
+}
+#navbar div.txt{
+  margin-top: 40px;
+  font-size: 15px;
+}
+#navbar div a.active{
+  color:#D06355;
+  border-bottom: 1px solid #D06355;
+  padding-bottom: 3px;
+}
+.logo{
+  float: left;
+  width: 65px;
+  height:65px;
+  filter: grayscale(0%);
+}
+
+/* ----INTRO----- */
+.intro{
+  padding-left: 8%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-right: 8%;
+  position: relative;
+}
+/* .bkground{
+  position:relative;
+} */
+.text{
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+h1{
+  font-size: 37px;
+}
+h3{
+  font-size: 25px;
+  line-height: 200%;
+}
+.highlight{
+  background-color: #ffd1cf;
+}
+.title{
+  color: #F46F5E;
+}
+/* ----------view portfolio arrow------- */
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  opacity: .3;
+  height:70px;
+  width:80px;
+  margin-top: 140px;
+  margin-bottom: 0;
+}
+.center.slidedown:hover {
+    -webkit-transform: translate(0,2em);
+    -moz-transform: translate(0,2em);
+    -o-transform: translate(0,2em);
+    -ms-transform: translate(0,2em);
+    transform: translate(0,2em);
+    opacity: 1;
+  }
+  .arrowInfo{
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    display: table-cell;
+  }
+
+/* ------------OVERALL FUNVISUALS--------- */
+#funVisuals{
+  padding-top: 50px;
+}
+/* ------HEADER---------- */
+.header{
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.style{
+  border-radius: 150px;
+  border: 6px solid #F46F5E;
+  padding: 15px;
+  width: 150px;
+  height: 5px;
+  color: white;
+}
+p{
+  background-color: #F46F5E;
+  text-align: center;
+  padding: 0;
+}
+/* ------GRAPHIC------- */
+.graphic{
+  margin-bottom: 15%;
+}
+
+/*-------------Other Design + GRID-----------*/
+.grid {
+    position: relative;
+    display: grid; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 8px;
+    -webkit-box-align: center;
+    /* grid-auto-columns: 1fr; */
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    margin: 2% 8% 8% 8%;
+
+}
+.grid div{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Create TWO equal columns that sits next to each other */
+.col1 {
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+.col2 {
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+.col3 {
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+.col4 {
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+.image{
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 400px;
+    width: 400px;
+    filter: grayscale(100%);
+}
+.image:hover{
+  /* opacity: .4; */
+  -webkit-filter:
+  grayscale(0%);
+  filter:grayscale(0%);
+  /* filter: blur(2px); */
+  /* filter:drop-shadow(8px 8px 10px gray); */
+  box-shadow: 0px 2px 31px -5px rgba(243,90,0,0.51);
+}
+.image{
+  width: 100%;
+  height: 100%;
+}
+
+.center2{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  opacity: .3;
+  height:70px;
+  width:80px;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+.center2.slideup:hover {
+    -webkit-transform: translate(0,-1em);
+    -moz-transform: translate(0,-1em);
+    -o-transform: translate(0,-1em);
+    -ms-transform: translate(0,-1em);
+    transform: translate(0,-1em);
+    opacity: 1;
+  }
+  .arrowInfo2{
+    text-decoration: none;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: black;
+    /* display: table-cell; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+#socials{
+  /* display: inline-block; */
+  /* float: left; */
+  text-align: center;
+  /* justify-content: center; */
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  width:300px;
+}
+.svgs{
+  /* float: left; */
+  /* text-align: center; */
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  opacity: .3;
+}
+.svgs:hover{
+  opacity: 1;
+}
+.footnote{
+  text-align: center;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.grid{
+  position: relative;
+  display: block;
+}
+.center{
+  margin-top: 30px;
+}
