@@ -51,8 +51,14 @@ body.fade-out {
   height:65px;
   margin-left: 40px;
   margin-top: 15px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
 }
-
+.logo:hover{
+  box-shadow: 0px 11px 0px -1px rgba(255,217,0,1);
+}
 /* ----INTRO----- */
 .intro{
   padding-left: 8%;
@@ -69,6 +75,12 @@ h3{
 }
 .highlight{
   background-color: #ffd1cf;
+}
+.spacing{
+  line-height: 20pt;
+}
+p{
+  margin:0;
 }
 
 /* ------------OVERALL FUNVISUALS--------- */
@@ -99,6 +111,45 @@ h3{
 }
 img{
   width: 100%;
+}
+.image{
+  margin-bottom: 50px;
+}
+.grid{
+  position: relative;
+  display: grid; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0 8px; */
+  -webkit-box-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-self: center;
+  grid-column-gap:10px;
+  grid-row-gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.col1 {
+    grid-column-start: 1;
+    grid-column-end:4;
+    /* border-style: solid; */
+    /* border-radius: 15px; */
+    /* border-width: thin; */
+    /* box-sizing: content-box; */
+    /* width: 80%; */
+    /* color: #F46F5E; */
+    /* -webkit-column-rule: 4px double #ff00ff;
+    -moz-column-rule: 4px double #ff00ff;
+    column-rule: 4px double #ff00ff; */
+}
+.col2 {
+    grid-column-start: 4;
+    grid-column-end:6;
+    /* border-style: solid;
+    border-radius: 15px;
+    border-width: thin; */
+    /* box-sizing: content-box; */
+    /* width : 80%; */
+    /* color: #F46F5E; */
 }
 .center2{
   margin-left: auto;
@@ -163,4 +214,13 @@ img{
   background-color: none;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+  .grid{
+    display: block;
+  }
+  #navbar{
+    display: block;
+  }
+
 }
