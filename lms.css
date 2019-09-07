@@ -52,8 +52,14 @@ body.fade-out {
   height:65px;
   margin-left: 40px;
   margin-top: 15px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
 }
-
+.logo:hover{
+  box-shadow: 0px 11px 0px -1px rgba(255,217,0,1);
+}
 /* ----INTRO----- */
 .intro{
   padding-left: 15%;
@@ -68,14 +74,17 @@ h2{
   font-size: 30px;
   color: #F46F5E;
   font-family: benton-sans medium, sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
-h3{
+/* h3{
   font-size: 20px;
   line-height: 200%;
   margin-bottom: 0;
   font-family: benton-sans medium, sans-serif;
   margin-top: 50px;
+} */
+.heading3{
+  margin-bottom: 140px;
 }
 h4{
   margin-top: 0;
@@ -84,6 +93,7 @@ h4{
 .section{
   /* margin-bottom: 100px; */
   margin-top:100px;
+  margin-bottom: 50px;
 }
 .highlight{
   background-color: #ffd1cf;
@@ -94,6 +104,22 @@ a{
 }
 .topic{
   font-size: 20px;
+}
+.small{
+  font-size: 16px;
+}
+.medium{
+  font-size: 20px;
+  line-height: 200%;
+  margin-bottom: 0;
+  font-family: benton-sans medium, sans-serif;
+  margin-top: 15px;
+}
+.darker{
+  color: black;
+}
+.spacing{
+  line-height: 20pt;
 }
 /* ------------OVERALL CASESTUDY--------- */
 /* .caseStudy{
@@ -116,10 +142,65 @@ a{
 .tools{
   display: inline;
 }
+/* -------overview----------- */
+ .grida{
+  position: relative;
+  display: grid; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0 8px; */
+  -webkit-box-align: center;
+  grid-template-columns: 1fr 3fr;
+  align-self: center;
+  grid-column-gap: 2%;
+  grid-row-gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  }
+  .center{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-
+  .speechBub{
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  .survey{
+    margin-bottom: 140px;
+  }
+  .components_li{
+    margin-right: 20px;
+  }
+/* -------------------------------- */
+/*
+  .col1 {
+      grid-column-start: 1;
+      grid-column-end:2;
+      border-style: solid;
+      border-radius: 15px;
+      border-width: thin;
+      box-sizing: content-box;
+      width: 80%;
+      color: #F46F5E;
+      -webkit-column-rule: 4px double #ff00ff;
+      -moz-column-rule: 4px double #ff00ff;
+      column-rule: 4px double #ff00ff;
+  }
+  .col2 {
+      grid-column-start: 2;
+      grid-column-end:5;
+      border-style: solid;
+      border-radius: 15px;
+      border-width: thin;
+      box-sizing: content-box;
+      width: 80%;
+      color: #F46F5E;
+  }
+*/
 
 /* -------------------grid---------------------------------------- */
+/* ----------------client req--------------- */
 .container{
   border-style: solid;
   border-color: #AEAEAE;
@@ -127,24 +208,24 @@ a{
   border-radius: 5px;
   margin-right: 25px;
   margin-left: 25px;
+  margin-bottom: 70px;
   box-shadow: 10px 10px 0px -1px rgba(209,209,209,1);
-
 }
 .grid1{
-position: relative;
-display: grid; /* IE10 */
-flex-wrap: wrap;
-padding: 0 8px;
--webkit-box-align: center;
-grid-template-columns: 1fr 1fr;
-align-self: center;
-grid-column-gap: 2%;
-grid-row-gap: 70px;
-margin-bottom: 50px;
+  position: relative;
+  display: grid; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 8px;
+  -webkit-box-align: center;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  grid-column-gap:2%;
+  grid-row-gap: 70px;
+  margin-bottom: 50px;
 }
 .grid1 div{
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .col1 {
@@ -169,9 +250,15 @@ margin-right: auto;
 }
 p{
   /* background-color: #F46F5E; */
-  text-align: center;
+  /* text-align: center;
   padding: 5% 5% 2% 5%;
-  font-size: 16px;
+  font-size: 16px; */
+}
+.align{
+  margin-top: 20px;
+}
+li{
+  margin-top: 10px;
 }
 
 .grid2{
@@ -196,6 +283,29 @@ h5{
 .top{
   margin-top: 40px;
 }
+.subject{
+  text-align: center;
+}
+/* ------------------------------------ */
+.box{
+  /* border-style: solid; */
+  border-width: thin;
+  background-color: #F46F5E;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.indent{
+  margin-left:20px;
+  margin-right: 20px;
+  /* padding-top: 1px; */
+  padding-bottom: 15px;
+  padding-top: 10px;
+  /* margin-bottom: 10px; */
+}
+.indent .medium, .indent .small{
+  color: white;
+}
+
 /*-------------Other Design + GRID-----------*/
 .grid {
     position: relative;
@@ -318,5 +428,8 @@ img{
   }
   .grid2{
     width: 78%;
+  }
+  #navbar{
+    display: block;
   }
 }
