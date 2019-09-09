@@ -74,6 +74,11 @@ h3{
   font-size: 25px;
   line-height: 200%;
 }
+h4{
+  font-size: 20px;
+  color: #919191;
+  font-style: italic;
+}
 .highlight{
   background-color: #ffd1cf;
 }
