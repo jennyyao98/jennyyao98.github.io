@@ -82,6 +82,16 @@ h3{
 p{
   margin:0;
 }
+.small{
+  font-size: 16px;
+}
+.medium{
+  font-size: 19px;
+  line-height: 180%;
+  margin-bottom: 0;
+  /* font-family: benton-sans medium, sans-serif; */
+  margin-top: 15px;
+}
 
 /* ------------OVERALL FUNVISUALS--------- */
 .funVisuals{
@@ -121,16 +131,16 @@ img{
   flex-wrap: wrap;
   /* padding: 0 8px; */
   -webkit-box-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-self: center;
-  grid-column-gap:10px;
+  grid-column-gap:40px;
   grid-row-gap: 30px;
   margin-bottom: 50px;
   margin-top: 10px;
 }
 .col1 {
     grid-column-start: 1;
-    grid-column-end:4;
+    grid-column-end:2;
     /* border-style: solid; */
     /* border-radius: 15px; */
     /* border-width: thin; */
@@ -142,8 +152,8 @@ img{
     column-rule: 4px double #ff00ff; */
 }
 .col2 {
-    grid-column-start: 4;
-    grid-column-end:6;
+    grid-column-start: 2;
+    grid-column-end:3;
     /* border-style: solid;
     border-radius: 15px;
     border-width: thin; */
