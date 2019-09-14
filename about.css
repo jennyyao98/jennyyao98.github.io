@@ -72,6 +72,8 @@ h1{
 h3{
   font-size: 25px;
   line-height: 200%;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 .highlight{
   background-color: #ffd1cf;
@@ -88,11 +90,25 @@ p{
 .medium{
   font-size: 19px;
   line-height: 180%;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   /* font-family: benton-sans medium, sans-serif; */
-  margin-top: 15px;
+  margin-top: 0;
 }
-
+.tight{
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.marg_top{
+  margin-top: 40px;
+}
+a{
+  text-decoration: none;
+  color:#D06355;
+}
+li{
+  margin-bottom: 5px;
+  line-height: 20pt;
+ }
 /* ------------OVERALL FUNVISUALS--------- */
 .funVisuals{
   padding-top: 50px;
@@ -141,25 +157,31 @@ img{
 .col1 {
     grid-column-start: 1;
     grid-column-end:2;
-    /* border-style: solid; */
-    /* border-radius: 15px; */
-    /* border-width: thin; */
-    /* box-sizing: content-box; */
-    /* width: 80%; */
-    /* color: #F46F5E; */
-    /* -webkit-column-rule: 4px double #ff00ff;
-    -moz-column-rule: 4px double #ff00ff;
-    column-rule: 4px double #ff00ff; */
 }
 .col2 {
     grid-column-start: 2;
     grid-column-end:3;
-    /* border-style: solid;
-    border-radius: 15px;
-    border-width: thin; */
-    /* box-sizing: content-box; */
-    /* width : 80%; */
-    /* color: #F46F5E; */
+}
+.grid2{
+  position: relative;
+  display: grid; /* IE10 */
+  flex-wrap: wrap;
+  /* padding: 0 8px; */
+  -webkit-box-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-self: center;
+  grid-column-gap:0px;
+  grid-row-gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.col1_2 {
+    grid-column-start: 1;
+    grid-column-end:5;
+}
+.col2_2 {
+    grid-column-start: 5;
+    grid-column-end:8;
 }
 .center2{
   margin-left: auto;
@@ -231,6 +253,12 @@ img{
   }
   #navbar{
     display: block;
+  }
+  .center{
+    text-align: center;
+  }
+  .resume{
+    font-size: 20px;
   }
 
 }
