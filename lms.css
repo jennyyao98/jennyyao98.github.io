@@ -90,6 +90,10 @@ h4{
   margin-top: 0;
   line-height: 20pt;
 }
+h6{
+  margin:0;
+  margin-bottom: 50px;
+}
 .section{
   /* margin-bottom: 100px; */
   margin-top:100px;
@@ -120,6 +124,12 @@ a{
 }
 .spacing{
   line-height: 20pt;
+}
+.zoom{
+  transition: transform .5s;
+}
+.zoom:hover{
+  transform:scale(1.35);
 }
 /* ------------OVERALL CASESTUDY--------- */
 /* .caseStudy{
@@ -171,6 +181,9 @@ a{
   }
   .components_li{
     margin-right: 20px;
+  }
+  .colored{
+    color:#F46F5E;
   }
 /* -------------------------------- */
 /*
@@ -286,6 +299,8 @@ h5{
 .subject{
   text-align: center;
 }
+
+
 /* ------------------------------------ */
 .box{
   /* border-style: solid; */
@@ -293,8 +308,28 @@ h5{
   background-color: #F46F5E;
   margin-top: 40px;
   margin-bottom: 50px;
+  border-radius: 1em;
 }
 .indent{
+  margin-left:20px;
+  margin-right: 20px;
+  /* padding-top: 1px; */
+  padding-bottom: 30px;
+  padding-top: 10px;
+  /* margin-bottom: 10px; */
+}
+.indent .medium, .indent .small{
+  color: white;
+}
+.box_2{
+  background-color: #ffe5c9;
+  /* opacity: .25; */
+  border-width: thin;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 1em;
+}
+.indent2{
   margin-left:20px;
   margin-right: 20px;
   /* padding-top: 1px; */
@@ -302,10 +337,23 @@ h5{
   padding-top: 10px;
   /* margin-bottom: 10px; */
 }
-.indent .medium, .indent .small{
-  color: white;
-}
 
+.box_3{
+  background-color: #c6f5ed;
+  /* opacity: .25; */
+  border-width: thin;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  border-radius: 1em;
+}
+.indent3{
+  margin-left:20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  /* margin-bottom: 40px; */
+}
 /*-------------Other Design + GRID-----------*/
 .grid {
     position: relative;
@@ -353,6 +401,20 @@ img{
   width: 100%;
   height: 100%;
 }
+/* ------Other grid3------------------ */
+.course_expansion{
+  display: grid;
+  position: relative;
+  /* flex-wrap: wrap; */
+  padding: 0 8px;
+  -webkit-box-align: center;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  grid-column-gap: 30px;
+  /* grid-row-gap: 70px; */
+}
+
+
 /* -------------FOOTER + BACK TO TOP ARROW------------ */
 .center2{
   margin-left: auto;
@@ -430,6 +492,9 @@ img{
     width: 78%;
   }
   #navbar{
+    display: block;
+  }
+  .course_expansion{
     display: block;
   }
 }
