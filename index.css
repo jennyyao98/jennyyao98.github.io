@@ -82,7 +82,9 @@ h4{
   color: #919191;
   font-style: italic;
   font-size: 20px;
-
+}
+.highlight2{
+  background-color: #fce803;
 }
 .highlight{
   background-color: #ffd1cf;
@@ -141,11 +143,11 @@ img{
   height: 5px;
   color: white;
 }
-p{
+/* p{
   background-color: #F46F5E;
   text-align: center;
   padding: 0;
-}
+} */
 /* ------GRAPHIC------- */
 .graphic{
   margin-bottom: 15%;
@@ -271,6 +273,8 @@ p{
   background-color: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
