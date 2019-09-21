@@ -130,6 +130,13 @@ h3{
     width: 100px;
     height: 5px;
     color: white;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  .style:hover{
+    box-shadow: 10px 10px 0px 0px rgba(255,217,0,1);
   }
   p{
     background-color: #F46F5E;
@@ -144,6 +151,10 @@ h3{
   .btn1 a, .btn2 a{
     text-decoration: none;
   }
+
+  /* .btn1:hover, .btn2:hover{
+    box-shadow: 10px 10px 0px 0px rgba(255,217,0,1);
+  } */
 /*---PHOTOGRAPHY & DAILYUI GRID-----*/
 .grid, .grid2{
     position: relative;
