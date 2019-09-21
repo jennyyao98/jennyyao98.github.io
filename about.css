@@ -246,6 +246,8 @@ img{
   background-color: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+
 }
 @media screen and (max-width: 800px) {
   .grid{
