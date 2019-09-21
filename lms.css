@@ -1,500 +1,353 @@
-html{
-  background-color: white;
-  scroll-behavior: smooth;
-}
-*{
-  font-family: benton-sans, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  color:#696969;
-}
-body{
-  opacity: 1;
-  transition: 1s opacity;
-}
-body.fade-out {
-    opacity: 0;
-    transition: none;
-}
-/* ------NAVBAR------ */
-#navbar{
-  display: grid;
-  grid-template-columns: 40% 15% 15% 15% 15%;
-  text-align: center;
-  padding: 32px;
-}
-#navbar a{
-  color:#707070;
-  background-color: white;
-  text-decoration: none;
-  font-size: 130%;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-}
-#navbar a:hover{
-  color: #D06355;
-}
-#navbar div.txt{
-  margin-top: 40px;
-  font-size: 15px;
-}
-#navbar div a.active{
-  color:#D06355;
-  border-bottom: 1px solid #D06355;
-  padding-bottom: 3px;
-}
-.logo{
-  float: left;
-  width: 65px;
-  height:65px;
-  margin-left: 40px;
-  margin-top: 15px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-}
-.logo:hover{
-  box-shadow: 0px 11px 0px -1px rgba(255,217,0,1);
-}
-/* ----INTRO----- */
-.intro{
-  padding-left: 15%;
-  padding-top: 60px;
-  padding-bottom: 30px;
-  padding-right: 15%;
-}
-h1{
-  font-size: 37px;
-}
-h2{
-  font-size: 30px;
-  color: #F46F5E;
-  font-family: benton-sans medium, sans-serif;
-  margin-bottom: 60px;
-}
-/* h3{
-  font-size: 20px;
-  line-height: 200%;
-  margin-bottom: 0;
-  font-family: benton-sans medium, sans-serif;
-  margin-top: 50px;
-} */
-.heading3{
-  margin-bottom: 140px;
-}
-h4{
-  margin-top: 0;
-  line-height: 20pt;
-}
-h6{
-  margin:0;
-  margin-bottom: 50px;
-}
-.section{
-  /* margin-bottom: 100px; */
-  margin-top:100px;
-  margin-bottom: 50px;
-}
-.highlight{
-  background-color: #ffd1cf;
-}
-a{
-  text-decoration: none;
-  color:#F46F5E;
-}
-.topic{
-  font-size: 20px;
-}
-.small{
-  font-size: 16px;
-}
-.medium{
-  font-size: 20px;
-  line-height: 200%;
-  margin-bottom: 0;
-  font-family: benton-sans medium, sans-serif;
-  margin-top: 15px;
-}
-.darker{
-  color: black;
-}
-.spacing{
-  line-height: 20pt;
-}
-.zoom{
-  transition: transform .5s;
-}
-.zoom:hover{
-  transform:scale(1.35);
-}
-/* ------------OVERALL CASESTUDY--------- */
-/* .caseStudy{
-  padding-top: 50px;
-} */
-/* ------HEADER---------- */
-.header{
-  padding-left: 15%;
-  padding-right: 15%;
-}
-.style{
-  border-radius: 150px;
-  border: 6px solid #F46F5E;
-  padding: 15px;
-  width: 150px;
-  height: 5px;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-.tools{
-  display: inline;
-}
-/* -------overview----------- */
- .grida{
-  position: relative;
-  display: grid; /* IE10 */
-  flex-wrap: wrap;
-  /* padding: 0 8px; */
-  -webkit-box-align: center;
-  grid-template-columns: 1fr 3fr;
-  align-self: center;
-  grid-column-gap: 2%;
-  grid-row-gap: 30px;
-  margin-bottom: 50px;
-  margin-top: 10px;
-  }
-  .center{
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="lms.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zup4ajg.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="fadeInEffect.js"></script>
+  <link rel="shortcut icon" href="logo4.ico">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Portfolio - LMS</title>
+</head>
 
-  .speechBub{
-    margin-bottom: 25px;
-    margin-top: 10px;
-  }
-  .survey{
-    margin-bottom: 140px;
-  }
-  .components_li{
-    margin-right: 20px;
-  }
-  .colored{
-    color:#F46F5E;
-  }
-/* -------------------------------- */
-/*
-  .col1 {
-      grid-column-start: 1;
-      grid-column-end:2;
-      border-style: solid;
-      border-radius: 15px;
-      border-width: thin;
-      box-sizing: content-box;
-      width: 80%;
-      color: #F46F5E;
-      -webkit-column-rule: 4px double #ff00ff;
-      -moz-column-rule: 4px double #ff00ff;
-      column-rule: 4px double #ff00ff;
-  }
-  .col2 {
-      grid-column-start: 2;
-      grid-column-end:5;
-      border-style: solid;
-      border-radius: 15px;
-      border-width: thin;
-      box-sizing: content-box;
-      width: 80%;
-      color: #F46F5E;
-  }
-*/
+<body>
+  <script>
+    document.body.className += ' fade-out';
+  </script>
+<!-- NAV BAR-->
+  <div id="navbar">
+    <div><a href="index.html"><img class="logo" src="logo4.png"></a></div>
+    <div class="txt"><a class="active" href="index.html#funVisuals">Portfolio</a></div>
+    <div class="txt"><a href="fun3.html">Fun Visuals</a></div>
+    <div class="txt"><a href="about.html">About me</a></div>
+    <div class="txt"><a href="https://drive.google.com/file/d/1Ttd6iTEXLA2LIRlrYWWiznnPyLAGdoq7/view?usp=sharing">Resume</a></div>
+  </div>
+<!-- INTRO -->
+  <div class="intro">
+    <img src="images/1.jpg">
+    <h1>MEDCHART - LMS (MEDCHART-U)</h1>
+  </div>
+<!-- LMS SUMMARY -->
+  <div class="caseStudy" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+    <div class="header">
+      <p class="small spacing">For my internship at ASM Research, I worked on a 4-month project with the UX team to design a website under one of ASMR’s major departments, MEDCHART( Medical Electronic Data Care History and Readiness Tracking). I designed an E-University
+        to centralized a learning space at MEDCHART by providing direct lessons and official government required assessments in one space. The contract had not officially started, so I was unable to perform formal user surveying and interviews.
+        However, with the resources I obtained, I underwent a UX design process to create a Mid-Fidelity prototype to propose to head of MEDCHART.</p>
 
-/* -------------------grid---------------------------------------- */
-/* ----------------client req--------------- */
-.container{
-  border-style: solid;
-  border-color: #AEAEAE;
-  margin-top: 10px;
-  border-radius: 5px;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-bottom: 70px;
-  box-shadow: 10px 10px 0px -1px rgba(209,209,209,1);
-}
-.grid1{
-  position: relative;
-  display: grid; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 8px;
-  -webkit-box-align: center;
-  grid-template-columns: 1fr 1fr;
-  align-self: center;
-  grid-column-gap:2%;
-  grid-row-gap: 70px;
-  margin-bottom: 50px;
-}
-.grid1 div{
-  margin-left: auto;
-  margin-right: auto;
-}
+<!-- OVERVIEW -->
+      <div class="section" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+        <h2>Overview</h2>
+        <div class="grida">
+          <div>
+            <p class="small darker">My Team</p>
+          </div>
+          <div>
+            <li class="small align">Thuy - Senior UI/UX Designer @ <a href="http://linkedin.com/in/thuytdinh">LinkedIn Profile</a></li>
+          </div>
+          <div>
+            <p class="small darker">Year & Duration</p>
+          </div>
+          <div>
+            <li class="small align">2019 - 4 months</li>
+          </div>
+          <div>
+            <p class="small darker">Tools</p>
+          </div>
+          <div>
+            <div class="tools small align">
+              <li>Adobe XD</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+            </div>
+          </div>
+          <div>
+            <p class="small darker">My Roles</p>
+          </div>
+          <div>
+            <div class="tools small align">
+              <li>Conducted research on the superusers and other similiar E-University tools</li>
+              <li>Designed the overall user workflow and information architecture framework of the E-University that fit the clients requirements and needs</li>
+              <li>Prototyped multiple iterations of mid-fidelity web designs</li>
+            </div>
+          </div>
+          <div>
+            <p class="small darker">Overall Process</p>
+          </div>
+          <div>
+            <div class="tools">
+              <p class="small"><span style="color:orange">•</span> 1) Research <span style="color:orange">•</span> 2) Identify Problem Areas and Solutions <span style="color:orange">•</span> 3) Ideation & Sketching <span style="color:orange">•</span> 4) Low Fidelity
+                <span
+                  style="color:orange">•</span> 5) Prototyping <span style="color:orange">•</span> 6) Validation</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-.col1 {
-    grid-column-start: 1;
-    grid-column-end:2;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: thin;
-    box-sizing: content-box;
-    width: 80%;
-    color: #F46F5E;
-}
-.col2 {
-    grid-column-start: 2;
-    grid-column-end:3;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: thin;
-    box-sizing: content-box;
-    width: 80%;
-    color: #F46F5E;
-}
-p{
-  /* background-color: #F46F5E; */
-  /* text-align: center;
-  padding: 5% 5% 2% 5%;
-  font-size: 16px; */
-}
-.align{
-  margin-top: 20px;
-}
-li{
-  margin-top: 10px;
-}
+<!-- RISING ACTION-->
+      <div class="section" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+        <h2>Rising Action</h2>
+        <div class="heading3">
+<!-- Rising Action -> Research -->
+          <p class="medium ">Research</p>
+<!-- <li>Client Requirements</li> -->
+          <p class="small center orange">Client Requirements</p>
+          <div class="container">
+            <h5 class="top">For Whom?</h5>
+            <div class="grid1">
+              <div class="col1">
+                <p class="center small">Army National Guards (ARNG)</p>
+              </div>
+              <div class="col2">
+                <p class="center small">Army Reserve</p>
+              </div>
+            </div>
+            <h5>Purpose of Tool</h5>
+            <div class="grid2">
+              <p class="center small">To maximize the efficiency of MEDCHART application usage.</p>
+            </div>
+            <h5>Central Problems to Address</h5>
+            <div class="grid1">
+              <div class="col1">
+                <p class="center">1. </p>
+                <p class="justify small">Currently no electronic system that provides MEDCHART users access to CBT (Computer Based Training)</p>
+              </div>
+              <div class="col2">
+                <p class="center">2. </p>
+                <p class="justify small">The current HIPAA CBT system is restricted to HIPAA CBT training and does not support CBT expandability.</p>
+              </div>
+            </div>
+            <h5>Base Required Components</h5>
+            <div class="grid1">
+              <div class="col1">
+                <p class="subject">Trainee User</p>
+                <ul class="components_li small">
+                  <li>Registration confirmations</li>
+                  <li>Training alerts/notifications</li>
+                  <li>Training certificates</li>
+                  <li>Enrollment Capacity</li>
+                  <li>Waitlist Feature during enrollment</li>
+                </ul>
+              </div>
+              <div class="col2">
+                <p class="subject">Managerial Controls</p>
+                <ul class="components_li small">
+                  <li>Pre-recorded training videos</li>
+                  <li>Training enrollment roster</li>
+                  <li>Progress Tracking</li>
+                  <li>Statistical reporting, survey reporting,training certificates, ability to fit live training object without the need of a formal release</li>
+                </ul>
+              </div>
+            </div>
+            <p style="margin-left: 5%; margin-right:5%:">*Roster = Officially name for a course</p>
 
-.grid2{
-  display: block;
-  border-style: solid;
-  border-radius: 15px;
-  border-width: thin;
+           </div>   <!--end of client req -->
+<!-- user surveying -->
+          <p class="small center orange">User Surveying on ASM-U* and other similiar tools</p>
+          <ul>
+            <li>What are your opinions on the interfaces/usability of the ASM-U interface?</li>
+            <div class="speechBub">
+              <img src="LMS/speechBubble.png" alt="">
+              <p class="small_3">*ASM-U is a E-University platform currently used by ASM employees to get required employee coursework completed. The concept of ASM is very similair to what MEDCHART-U will be.</p>
+            </div>
+            <li>What are parts of the website you think could be improved on?</li>
+            <img src="LMS/speechBubble2.png" alt="" class="speechBub">
+            <li>What do you like about your favorite E-University (i.e. KhanAcademy, Udemy, Lynda, etc.)</li>
+            <img src="LMS/speechBubble3.png" alt="" class="speechBub">
+          </ul>
+          <img class="survey" src="LMS/summaryUserSurvey.png" alt=""><!--end of user surveying -->
 
-  box-sizing: content-box;
-  width: 90%;
-  color: #F46F5E;
-  margin-bottom: 5%;
-  margin: 0 auto;
-}
-h5{
-  margin-bottom: 10px;
-  font-size: 15px;
-  margin-left: 40px;
-  margin-top: 15px;
-  font-weight: bolder;
-}
-.top{
-  margin-top: 40px;
-}
-.subject{
-  text-align: center;
-}
+<!-- Rising Action -> Problem & Goal -->
+          <!-- <div class="box"> -->
+            <!-- <div class="indent"> -->
+              <p class="medium">"Problem Scope"</p>
+              <div class="box_2">
+                <div class="indent2">
+                  <span style="margin-bottom:5px; font-size: 18px;">"Problem"</span>
+                  <ul>
+                    <li class="small">Many users of similiar E-Universities address the issue of redundancy and unnecessary pages which contributed to the confusion of navigation.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box_3">
+                <div class="indent3">
+              <span style="margin-bottom:5px; font-size: 18px;">Take Away</span>
+              <ul>
+                <li class="small">A E-University should be geared to one user. (Personalized) </li>
+                <li class="small">User Progress Tracking creates incentive, encourages user-friendliness, and provides a sense of direction for users.</li>
+                <li class="small">The navigation from start to completion of a roster should be clear and easy to follow through.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="medium">Goal</p>
+          <div class="box">
+            <div class="indent">
+                            <!-- <p class="small">Take Away </br> To identify the main problem area of the MEDCHART system, I talked to my teammate who provided necessary insight on the current problems as well as the culture of ASMR and how they derived the solution/goal. </p> -->
+                            <!-- <p class="small">I paired that information from my teammate with the research and data I've gathered from similiar tools to consolidate the goal and primary theme of the tool.</p> -->
+              <ol>
+                <li class="small_2">To maximize the usage of each page in order to reduce the repetition of information on different pages.</li>
+                <li class="small_2">To create a personalizable interface which informs users of their progress on their rosters and requirements.</li>
+              </ol>
+            </div>
+        </div> <!--end of Problem & Goals -->
 
+  <!-- Rising Action -> Ideation -->
+        <p class="medium">Ideation</p>
+                              <!-- thus: the main focus was personalization and centralization -->
+        <h4 class="small center">Journey Maps</h4>
+        <p class="small spacing">To lay out the foundation of the website, I created a high-level journey map which portrays the journey of the superusers: National Army Guards and the AMRG, to visualize the general navigation of the site.</p>
+        <p class="small spacing"> Since my goal was not to redesign a pre-existing website,
+          I did not include the user testing portions of the traditional journey map. Instead, I laid out possible thoughts the user may have to theorize a realistic sense of the user's journey through the website.</p>
+        <img src="LMS/lmsMap.png" class="zoom" alt="">
+      </div>
+    </div> <!--end of RISING ACTION -->
 
-/* ------------------------------------ */
-.box{
-  /* border-style: solid; */
-  border-width: thin;
-  background-color: #F46F5E;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  border-radius: 1em;
-}
-.indent{
-  margin-left:20px;
-  margin-right: 20px;
-  /* padding-top: 1px; */
-  padding-bottom: 30px;
-  padding-top: 10px;
-  /* margin-bottom: 10px; */
-}
-.indent .medium, .indent .small{
-  color: white;
-}
-.box_2{
-  background-color: #ffe5c9;
-  /* opacity: .25; */
-  border-width: thin;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 1em;
-}
-.indent2{
-  margin-left:20px;
-  margin-right: 20px;
-  /* padding-top: 1px; */
-  padding-bottom: 15px;
-  padding-top: 10px;
-  /* margin-bottom: 10px; */
-}
+<!-- FALLING ACTIONS & RESOLUTIONS -->
+      <div class="section" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+        <h2>Falling Actions and resolution</h2>
+      <div class="heading3">
 
-.box_3{
-  background-color: #c6f5ed;
-  /* opacity: .25; */
-  border-width: thin;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  border-radius: 1em;
-}
-.indent3{
-  margin-left:20px;
-  margin-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* padding-top: 10px; */
-  /* margin-bottom: 40px; */
-}
-/*-------------Other Design + GRID-----------*/
-.grid {
-    position: relative;
-    display: grid; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 8px;
-    -webkit-box-align: center;
-    /* grid-auto-columns: 1fr; */
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-    grid-column-gap: 70px;
-    grid-row-gap: 70px;
-    margin: 2% 8% 8% 8%;
+<!-- Falling Action & Res - IA -->
+        <div class="heading4">
+          <p class="medium">Information Architecture</p>
+          <img src="LMS/IA_labeled.png" class="zoom"alt="">
+          <p> <span style="text-decoration:italic; color: #F46F5E;">1st row: 4 Phases, 2nd row: Main pages, 3rd row: Components, 4th row: Features.</span></p>
 
-}
-.grid div{
-  margin-left: auto;
-  margin-right: auto;
-}
-/* Create TWO equal columns that sits next to each other */
-.col1 {
-    grid-column-start: 1;
-    grid-column-end:2;
-}
-.col2 {
-    grid-column-start: 2;
-    grid-column-end:3;
-}
-.col3 {
-    grid-column-start: 1;
-    grid-column-end:2;
-}
-.col4 {
-    grid-column-start: 2;
-    grid-column-end:3;
-}
-img {
-    margin-top: 8px;
-    vertical-align: middle;
-    height: 400px;
-    width: 400px;
-}
+          <p class="spacing small">With a general 4-step flow of the user's journey through the website, I began to settle on the physical pages that would correspond to each phase of the journey map.</p>
+          <p class="spacing small">Using sticky notes, I used the card sorting method to layout each level of MEDCHART-U's information architecture. The first row of this tree diagram structure are the 4 phases. As the tree branched out, each level became more specific.</p>
+          <p style="font-size:17px;"><span style="color: #F46F5E;">Main Pages :</span> Home Landing Page, Roster Catalog, Roster Overview, Roster, My Progress</p>
+        </div>
 
-img{
-  width: 100%;
-  height: 100%;
-}
-/* ------Other grid3------------------ */
-.course_expansion{
-  display: grid;
-  position: relative;
-  /* flex-wrap: wrap; */
-  padding: 0 8px;
-  -webkit-box-align: center;
-  grid-template-columns: 1fr 1fr;
-  align-self: center;
-  grid-column-gap: 30px;
-  /* grid-row-gap: 70px; */
-}
+<!-- Falling Action & Res - Iterative Design -->
+        <div class="heading4">
+          <p class="medium">Iterative Design Process</p>
+          <p class="spacing small">With the main pages settled, I worked with my team to decide on the best layout for each page. </p>
+          <p class="spacing small">To demonstrate the iterative design process, I will showcase the iterative process conducted on the Home Landing Page.</p>
+          <p class="spacing small">For the landing page, I decided on a two-column layout with the summarization of information on the left column and more detailed information on the right column.</p>
+          <img src="LMS/LMSWireframe.png" alt="">
+          <h4 class="small center">First Prototype</h4>
+          <img src="LMS/main_1_label-01.png" alt="">
+          <h4 class="small center">Final Iteration Prototype</h4>
+          <img src="LMS/LMSMain_2.png" alt="">
+          <p class="spacing small">The changes I made between the first and the final iteration focused on reducing redundancy and confusion in terms of navigation. Specifically, having two routes to view notifications would lead to confusion as there would be no direct relationship between the nofitication bell and bar. Thus, removing the notification bar in the 1st iteration would reduce confusion. </p>
+      </div>
+
+<!-- Falling Action & Res - Challenges Faced -->
+      <div class="heading4">
+          <p class="medium">Solution to the Goal</p>
+                      <!-- <ol>
+                        <li>How to reduce the number of pages and prevent duplicate pages with the same functions</li>
+                        <ul>
+                          <li>Solution: Originally, I was going to have the "Search" results lead to its own independent page. I realized that I could minimize navigation complexity by having "Roster Catalog" and "Search" results lead to the same page. </li>
+                        </ul>
+                      </ol>
+                      <ol>
+                        <li>Revising the Information Architecture: After deciding the main pages of the website, addressing smaller pages/features and how they would be integrated into the main website flowchart</li>
+                        <ul>
+                          <li>Solution: Since the main phases of the navigation corresponded to the process of completing courses, our primary focus   </li>
+                        </ul>
+                      </ol> -->
+            <p style="color: #F46F5E;" class="small">1. Simplification of the pages: How to reduce the number of pages and prevent duplicate pages with the same functions</li>
+            <p class="small spacing">Merged the two main pages: Roster Overview and the Roster Catalog into one page by using a shrink and expand feature so that users would not need to leave the roster results page when browsing the roster catalog.</p>
+              <div class="course_expansion">
+                <div class="col1b">
+                  <img class="zoom" src="LMS/course_shrinked_1.png" alt="">
+                </div>
+                <div class="col2b">
+                  <img class="zoom" src="LMS/course_expanded_1.png" alt="">
+                </div>
+              </div>
+            </br>
+              <p class="small spacing">Compression of pages: Joined the My Profile section with the My Progress into one page</p>
+              <img src="LMS/profile.png" alt="">
+            <p style="color: #F46F5E;" class="small">2. Personlization: How to create incentive for users of MEDCHART-U? Where to implement progress tracking?</li>
+              <!-- <p class="small spacing">Created a card on the landing page to displayed a summarized User's course progress.</p>
+              <img src="LMS/progress.png" alt=""> -->
+            <p class="small spacing">Provided progress tracking elements throughout the website.</p>
+            <div class="grid5">
+              <div class="col1_5">
+                <img src="LMS/mainProg_Com3.png" alt="">
+              </div>
+              <div class="col2_5">
+                <div class="grid4">
+                  <div>
+                    <p class="small">Landing Page</p>
+                  </div>
+                  <div>
+                    <img class="shadow" src="LMS/mainProg1.png" alt="">
+                  </div>
+                  <div>
+                    <p class="small">Roster Overview</p>
+                  </div>
+                  <div>
+                    <img class="shadow" src="LMS/mainProg3.png" alt="">
+                  </div>
+                  <div>
+                    <p class="small">Roster</p>
+                  </div>
+                  <div>
+                    <img class="shadow" src="LMS/mainProg2.png" alt="">
+                  </div>
+                  <div>
+                    <p class="small">My Progress</p>
+                  </div>
+                  <div>
+                    <img class="shadow" src="LMS/mainProg5.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
-/* -------------FOOTER + BACK TO TOP ARROW------------ */
-.center2{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  opacity: .3;
-  height:70px;
-  width:80px;
-  margin-top: 80px;
-  margin-bottom: 0;
-}
-.center2.slideup:hover {
-    -webkit-transform: translate(0,-1em);
-    -moz-transform: translate(0,-1em);
-    -o-transform: translate(0,-1em);
-    -ms-transform: translate(0,-1em);
-    transform: translate(0,-1em);
-    opacity: 1;
-  }
-  .arrowInfo2{
-    text-decoration: none;
-    text-align: center;
-    /* vertical-align: middle; */
-    color: black;
-    /* display: table-cell; */
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100%;
-  }
-#socials{
-  /* display: inline-block; */
-  /* float: left; */
-  text-align: center;
-  /* justify-content: center; */
-  margin-top: 160px;
-  margin-left: auto;
-  margin-right: auto;
-  width:300px;
-}
-.svgs{
-  /* float: left; */
-  /* text-align: center; */
-  height: 30px;
-  width: 30px;
-  margin-right: 20px;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  opacity: .3;
-}
-.svgs:hover{
-  opacity: 1;
-}
-.footnote{
-  text-align: center;
-  background-color: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* --------------------------------------------------- */
-@media screen and (max-width: 800px) {
-  p{
-    font-size: 14px;
-  }
-  .grid1{
-    display: block;
-  }
-  .grid2{
-    width: 78%;
-  }
-  #navbar{
-    display: block;
-  }
-  .course_expansion{
-    display: block;
-  }
-}
+        </div>
+      </div>
+
+                  <!-- Challenges:
+                - Mention additional features: notification system
+                - Compression of pages: joined the My profile section with the my progress into one page to a more centralized page
+                - Compresion of pages: decided to course overpage with the course catalog by using a expand/shrink feature which allows user to stay on the same page( course catalog) as most user will be browsing and open to searching for additional course -->
+    </div>  <!-- end of FALLING ACTIONS & RESOLUTIONS -->
+
+<!-- VALIDATION -->
+      <div class="section" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+        <h2>Validation</h2>
+
+<!-- Validation - Review from Manager -->
+        <p class="medium">Review from Manager</p>
+        <p class="spacing small">With the completion of the mid-fidelity prototype, my internship was coming an end. To conclude my portion of contribution to the MEDCHART-U website, I presented my work to the head of the MEDCHART department for critisim and feedback.</p>
+        <img src="LMS/managerBubble.png" alt="">
+      </div>  <!-- End of VALIDATION -->
+
+<!-- FINAL THOUGHTS -->
+      <div class="section" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+        <h2>Final Thoughts and Reflection</h2>
+        <p class="spacing small">Design is vital and sometimes it is an undermined step in the world of developement. There were definitely moments of frustration in which I didn't know how to progress my design with the strict restrictions placed on it. However, iteration after iteration
+          and close analysis, I was able to find a design that our team believes to best suit the users and the situation, a design which satisfied the client and governmental requirement yet provided the most usabilty to the users.</p>
+
+<!-- Final thoughts - Final Product -->
+        <p class="medium">Final Product: <a href="https://xd.adobe.com/view/ac9f5adb-052b-4f34-7a3a-d131663d758f-daae/?fullscreen">MEDCHART-U Mid Fidelity Prototype</a></p>
+      </div>  <!-- End of FINAL THOUGHTS -->
+
+
+<!-- BACK TO TOP BUTTON -->
+  <div class="center2 slideup">
+    <a href="#navbar"><img src="up-arrow.svg"></a>
+    <a href="#navbar" class="arrowInfo2">Back to Top</a>
+  </div>
+
+<!-- FOOTER -->
+  <div id="socials">
+    <a href="https://www.linkedin.com/in/jennyyao98/"><img class="svgs" src="svg/linkedin.svg"></a>
+    <a href="https://dribbble.com/jennyyao98"><img class="svgs" src="svg/dribbble.svg"></a>
+    <a href="https://drive.google.com/file/d/1Ttd6iTEXLA2LIRlrYWWiznnPyLAGdoq7/view?usp=sharing"><img class="svgs" src="svg/pdf.svg"></a>
+    <a href="mailto:jy7eq@virginia.edu"><img class="svgs" src="svg/envelope.svg"></a>
+  </div>
+  <h4 class="footnote">&copy Designed and Coded by Jenny Yao</h4>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
