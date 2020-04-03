@@ -379,6 +379,14 @@ img{
     grid-column-start: 1;
     grid-column-end: 2;
   }
+  .col18 {
+      grid-column-start: 2;
+      grid-column-end:3;
+  }
+  .col19{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 
 }
 .center2{
