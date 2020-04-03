@@ -359,6 +359,27 @@ img{
       grid-column-start: 2;
       grid-column-end:3;
   }
+  .col13{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .col14 {
+      grid-column-start: 2;
+      grid-column-end:3;
+  }
+  .col15{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .col16{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .col17{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
 }
 .center2{
   margin-left: auto;
