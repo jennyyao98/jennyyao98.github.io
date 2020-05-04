@@ -17,7 +17,7 @@ body.fade-out {
     transition: none;
 }
 /* ------NAVBAR------ */
-#navbar{
+/* #navbar{
   display: grid;
   grid-template-columns: 40% 15% 15% 15% 15%;
   text-align: center;
@@ -45,6 +45,51 @@ body.fade-out {
   color:#D06355;
   border-bottom: 1px solid #D06355;
   padding-bottom: 3px;
+} */
+.navbar{
+  margin-top: 0;
+  
+}
+.navbar-brand{
+  margin-left: 30px;
+  padding: 0;
+}
+.bg-light{
+  background-color: white!important;
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+button:focus {outline:0;}
+
+.navbar-nav{
+  margin-left: 30px;
+  /* display: inline-block; */
+  
+  /* float:right; */
+  margin-top: 30px;
+}
+a.nav-link{
+  margin-right: 7px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #D06355;
+}
+.logo{
+  float: left;
+  width: 70px;
+  height:70px;
+  filter: grayscale(0%);
+  /* margin-left: 40px; */
+  margin-top: 15px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* position: fixed; */
 }
 .logo{
   float: left;
