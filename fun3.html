@@ -78,61 +78,61 @@
    <!-- image grid -->
    <div class="grid">
      <div class="col1">
-       <img src="images2/1.jpg">
+       <img id="myImg" src="images2/1.jpg">
      </div>
      <div class="col2">
-       <img src="images2/2.jpg">
+       <img id="myImg2" src="images2/2.jpg">
      </div>
      <div class="col3">
-       <img src="images2/3.jpg">
+       <img id="myImg3" src="images2/3.jpg">
      </div>
      <div class="col4">
-       <img src="images2/4.jpg">
+       <img id="myImg4" src="images2/4.jpg">
      </div>
      <div class="col5">
-       <img src="images2/5.jpg">
+       <img id="myImg5" src="images2/5.jpg">
      </div>
      <div class="col6">
-       <img src="images2/6.jpg">
+       <img id="myImg6" src="images2/6.jpg">
      </div>
      <div class="col7">
-       <img src="images2/7.jpg">
+       <img id="myImg7" src="images2/7.jpg">
      </div>
      <div class="col8">
-       <img src="images2/8.jpg">
+       <img id="myImg8" src="images2/8.jpg">
      </div>
      <div class="col9">
-       <img src="images2/9.jpg">
+       <img id="myImg9" src="images2/9.jpg">
      </div>
      <div class="col10">
-       <img src="images2/10.jpg">
+       <img id="myImg10" src="images2/10.jpg">
      </div>
      <div class="col11">
-       <img src="images2/11.jpg">
+       <img id="myImg11" src="images2/11.jpg">
      </div>
      <div class="col12">
-       <img src="images2/12.jpg">
+       <img id="myImg12" src="images2/12.jpg">
      </div>
      <div class="col13">
-       <img src="images2/13.jpg">
+       <img id="myImg13" src="images2/13.jpg">
      </div>
      <div class="col14">
-       <img src="images2/14.jpg">
+       <img id="myImg14" src="images2/14.jpg">
      </div>
      <div class="col15">
-       <img src="images2/15.jpg">
+       <img id="myImg15" src="images2/15.jpg">
      </div>
      <div class="col16">
-       <img src="images2/16.jpg">
+       <img id="myImg16" src="images2/16.jpg">
      </div>
      <div class="col17">
-       <img src="images2/17.jpg">
+       <img id="myImg17" src="images2/17.jpg">
      </div>
      <div class="col18">
-       <img src="images2/18.jpg">
+       <img id="myImg18" src="images2/18.jpg">
      </div>
      <div class="col19">
-       <img src="images2/19.jpg">
+       <img id="myImg19" src="images2/19.jpg">
      </div>
    </div>
    <div class="grid2">
@@ -163,6 +163,12 @@
        </div>
      </a>
    </div>
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 </div>
 <!-- ERROR FREE UP TO HERE -->
 <div class="center2 slideup">
@@ -177,6 +183,141 @@
 </div>
 <h4 class="footnote">&copy Designed and Coded by Jenny Yao</h4>
 
+<script>
+  // Get the modal
+  function getImage(x){
+    var img = document.getElementById(x);
+    return img;
+  }
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var img2 = document.getElementById("myImg2");
+  var img3 = document.getElementById("myImg3");
+  var img4 = document.getElementById("myImg4");
+  var img5 = document.getElementById("myImg5");
+  var img6 = document.getElementById("myImg6");
+  var img7 = document.getElementById("myImg7");
+  var img8 = document.getElementById("myImg8");
+  var img9 = document.getElementById("myImg9");
+  var img10 = document.getElementById("myImg10");
+  var img11 = document.getElementById("myImg11");
+  var img12 = document.getElementById("myImg12");
+  var img13 = document.getElementById("myImg13");
+  var img14 = document.getElementById("myImg14");
+  var img15 = document.getElementById("myImg15");
+  var img16 = document.getElementById("myImg16");
+  var img17 = document.getElementById("myImg17");
+  var img18 = document.getElementById("myImg18");
+  var img19 = document.getElementById("myImg19");
+
+
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img8.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img9.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img10.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img11.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img12.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img13.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img14.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img15.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img16.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img17.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img18.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  img19.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
 </body>
 
 </html>
