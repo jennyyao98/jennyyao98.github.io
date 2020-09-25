@@ -288,10 +288,8 @@ img{
 .footnote{
   text-align: center;
   background-color: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-
+  font-size: 14px;
+  margin: 8px auto 12px auto;
 }
 @media screen and (max-width: 800px) {
   .grid{
