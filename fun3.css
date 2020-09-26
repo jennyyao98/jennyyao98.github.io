@@ -291,12 +291,19 @@ img{
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
   max-height:700px;
 }
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  max-height:1200px;
+}
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content,.modal-content2 #caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -330,7 +337,22 @@ img{
   text-decoration: none;
   cursor: pointer;
 }
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* ---------TEST ENDS HERE-------- */
 
 .center2{
