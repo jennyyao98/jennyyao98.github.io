@@ -116,6 +116,7 @@ h1{
 h3{
   font-size: 23px;
   line-height: 200%;
+  padding-right: 20px;
 }
 h4{
 
@@ -151,7 +152,7 @@ h4{
   /* grid-auto-columns: 1fr; */
   grid-template-columns: 30% 70%;
   align-self: center;
-  grid-column-gap: 70px;
+  /* grid-column-gap: 10px; */
   grid-row-gap: 70px;
   margin: 10% 8% 15% 8%;
 }
@@ -239,6 +240,7 @@ img{
 /* ------GRAPHIC------- */
 .graphic{
   margin-bottom: 15%;
+  
 }
 
 /*-------------Other Design + GRID-----------*/
