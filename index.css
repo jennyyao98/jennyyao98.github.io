@@ -21,21 +21,22 @@ body.fade-out {
   grid-template-columns: 40% 15% 15% 15% 15%;
   text-align: center;
   padding: 32px;
-}
-#navbar a{
-  color:#707070;
+}*/
+#navbr{
+  color:#D06355;
   background-color: white;
   text-decoration: none;
-  font-size: 130%;
+  font-size: 100%;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
 }
-#navbar a:hover{
-  color: #D06355;
+#navbr:hover{
+  box-shadow: 0px 11px 0px -1px rgba(255,217,0,1);
 }
+/*
 #navbar div.txt{
   margin-top: 40px;
   font-size: 15px;
@@ -48,7 +49,7 @@ body.fade-out {
 
 .navbar{
   margin-top: 0;
-  
+
 }
 .navbar-brand{
   margin-left: 30px;
@@ -68,7 +69,7 @@ button:focus {outline:0;}
 .navbar-nav{
   margin-left: 30px;
   /* display: inline-block; */
-  
+
   /* float:right; */
   margin-top: 30px;
 }
@@ -118,9 +119,7 @@ h3{
   line-height: 200%;
   padding-right: 20px;
 }
-h4{
 
-}
 .label{
   /* text-shadow: 1px 1px 0px rgba(255,217,0,1); */
   color: #919191;
@@ -183,7 +182,7 @@ h4{
   opacity: .3;
   height:70px;
   width:80px;
-  margin-top: 140px;
+  margin-top: 110px;
   margin-bottom: 0;
 }
 .center.slidedown:hover {
@@ -240,7 +239,7 @@ img{
 /* ------GRAPHIC------- */
 .graphic{
   margin-bottom: 15%;
-  
+
 }
 
 /*-------------Other Design + GRID-----------*/
@@ -338,7 +337,7 @@ img{
   .arrowInfo2:hover{
     text-decoration: none;
     color: black;
-    text-align: center;    
+    text-align: center;
     vertical-align: middle;
 
   }
@@ -349,6 +348,16 @@ img{
   /* justify-content: center; */
   margin-top: 160px;
   margin-left: auto;
+  margin-right: auto;
+  width:300px;
+}
+#social2{
+  /* display: inline-block; */
+  /* float: left; */
+  text-align: left;
+  /* justify-content: center; */
+  margin-top: 10px;
+  /* margin-left: auto; */
   margin-right: auto;
   width:300px;
 }
@@ -365,6 +374,21 @@ img{
   opacity: .3;
 }
 .svgs:hover{
+  opacity: 1;
+}
+.svgs2{
+  /* float: left; */
+  /* text-align: center; */
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  opacity: .3;
+}
+.svgs2:hover{
   opacity: 1;
 }
 .footnote{

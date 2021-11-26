@@ -47,7 +47,7 @@ body.fade-out {
 } */
 .navbar{
   margin-top: 0;
-  
+
 }
 .navbar-brand{
   margin-left: 30px;
@@ -67,7 +67,7 @@ button:focus {outline:0;}
 .navbar-nav{
   margin-left: 30px;
   /* display: inline-block; */
-  
+
   /* float:right; */
   margin-top: 30px;
 }
@@ -147,7 +147,7 @@ h3{
   a.arrowInfo:hover{
     text-decoration: none;
     color: black;
-    text-align: center;    
+    text-align: center;
     vertical-align: middle;
 
   }
@@ -179,25 +179,23 @@ h3{
     box-shadow: 10px 10px 0px 0px rgba(255,217,0,1);
   }
   .style2{
-    border-radius: 150px;
-    border: 6px solid #F46F5E;
-    padding: 15px;
-    width: 135px;
+    padding: 0 0 0 8px;
+    width: 110px;
     height: 5px;
-    color: white;
+    color: #D06355;
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
   }
   .style2:hover{
-    box-shadow: 10px 10px 0px 0px rgba(255,217,0,1);
+    box-shadow: 0px 11px 0px -1px rgba(255,217,0,1);
   }
-  p{
+  /* p{
     background-color: #F46F5E;
     text-align: center;
     padding: 0;
-  }
+  } */
   /* -------------TWO BUTTONS----------- */
   #headernav{
     display: grid;
@@ -318,7 +316,7 @@ img{
   max-height:1130px;
 }
 /* Add Animation */
-.modal-content,.modal-content2 #caption {  
+.modal-content,.modal-content2 #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -326,12 +324,12 @@ img{
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
@@ -576,7 +574,7 @@ img{
   .arrowInfo2:hover{
     text-decoration: none;
     color: black;
-    text-align: center;    
+    text-align: center;
     vertical-align: middle;
 
   }
